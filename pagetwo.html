@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invoice Email</title>
+  <link rel="icon" href="assets/image/logo/logo.png" />
+  <link rel="stylesheet" href="assets/css/vendor/normalize.css" />
+  <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/vendor/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/css/vendor/all.min.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      box-sizing: border-box;
+      background-color: #fffefe;
+      direction: ltr;
+      font-family: "Tiro Devanagari Sanskrit", serif;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul li {
+      list-style-type: none;
+    }
+
+    .row {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .row>div {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .pagetwo {
+      padding: 15px 0px;
+    }
+
+    .pagetwo h2 {
+      text-align: center;
+      margin: 25px auto;
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .pagetwo__table .cart,
+    .pagetwo__table .doc {
+      border: 0.5px solid #000;
+      padding: 10px;
+    }
+
+    .pagetwo__table .cart h5,
+    .pagetwo__table .doc h5 {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .pagetwo__table .cart p,
+    .pagetwo__table .doc p {
+      font-size: 16px;
+    }
+
+    .pagetwo__table .cart {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pagetwo__table .cart span {
+      font-size: 50px;
+      color: #e77e7e;
+    }
+
+    .pagetwo__table div.table {
+      border: 0.5px solid #000;
+      text-align: left;
+    }
+
+    .pagetwo__table div.table table.table {
+      width: 90%;
+      border: 2px solid #cecece;
+      margin: 0px;
+    }
+
+    .pagetwo__table div.table table.table thead .table-active {
+      border-top: 2px solid #cecece;
+    }
+
+    .pagetwo__table div.table table.table thead .table-active th {
+      width: 25%;
+      border-bottom: 2px solid #c0c0c0;
+    }
+
+    .pagetwo__table div.table table.table thead .table-active th:first-of-type {
+      width: 50%;
+      border-right: 2px solid #c0c0c0;
+    }
+
+    .pagetwo__table div.table .tablefooter {
+      width: 90%;
+    }
+
+    .pagetwo__table div.table .footertable {
+      padding: 20px 10px;
+    }
+
+    .pagetwo__table div.table .footertable h6 {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .pagetwo__table div.table .footertable p {
+      font-weight: bold;
+    }
+
+    .pagetwo__table div.table h4 {
+      font-size: 16px;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+      margin: 30px 0px;
+    }
+
+    .pagetwo__table a {
+      color: #4444fa;
+      text-decoration: underline;
+    }
+
+    /*# sourceMappingURL=main.css.map */
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <div class="pagetwo">
+        <h2>PURCHASE ORDER SUGGESTION</h2>
+        <div class="pagetwo__table">
+          <div class="row">
+
+            <div class="cart col-6">
+              <span><i class="fa-solid fa-cart-arrow-down"></i></span>
+            </div>
+            <div class="doc col-6">
+              <h5>
+                Humhumm
+              </h5>
+              <p>
+                Email: <a href="#"> info@mysupply.me</a></br>
+                Call Center: <a href="#"> 22986002</a></br>
+              </p>
+            </div>
+            <div class="doc col-6">
+              <p>
+                Invoice # 1-000001319-1027
+                </br>
+                Order Date: Apr 26, 2021
+              </p>
+            </div>
+            <div class="doc col-6">
+              <p>
+                Order # 000001319
+              </p>
+            </div>
+
+            <div class="table col-12">
+              </br>
+              <table class="table">
+                <thead>
+                  <tr class=" table-active">
+                    <th scope="row" colspan="3">Supplier Del Monte : Order # 000001319 -1027 </th>
+                  </tr>
+
+
+                  <tr class=" table-active">
+                    <th scope="row">Items </th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">
+                      DATES MEDJOOL 5KG
+                      <h6>
+                        SKU: DMDD001
+                      </h6>
+                    </th>
+                    <td>1</td>
+                    <th>
+                      KWD13.000
+                    </th>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      Del Monte Honey Pineapple
+                      <h6>
+                        SKU: DM-3000
+                      </h6>
+                    </th>
+                    <td>2</td>
+                    <th>
+                      KWD11.000
+                    </th>
+                  </tr>
+
+
+                  <tr class="table-active">
+                    <td scope="row"> </td>
+                    <td scope="col">Shipping & Handling</td>
+                    <td scope="col">KWD0.250</td>
+                  </tr>
+
+                  <tr class=" table-active">
+                    <td scope="row"> </td>
+                    <td scope="col">Tax</td>
+                    <td scope="col">KWD0.250</td>
+                  </tr>
+
+                  <tr class=" table-active">
+                    <td scope="row"> </td>
+                    <td scope="col">Discount</td>
+                    <td scope="col">KWD0.500</td>
+                  </tr>
+
+                  <tr class=" table-active">
+                    <td scope="row"> </td>
+                    <td scope="col">Subtotal </td>
+                    <td scope="col">KWD24.000</td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+
+              <table class="table">
+                <thead>
+                  <tr class=" table-active">
+                    <th scope="row" colspan="3">Supplier Del Monte : Order # 000001319 -1027 </th>
+                  </tr>
+
+                  <tr class="table-active">
+                    <th scope="row">Items </th>
+                    <th scope="col">Qty</th>
+                    <th scope="col">Price</th>
+                  </tr>
+
+
+                  <tr class="table-active">
+                    <th scope="row">
+                      POTATO 5KG
+                      <h6>
+                        SKU: LTDD001
+                      </h6>
+                    </th>
+                    <th scope="col">1</th>
+                    <th scope="col">
+                      <h6> KWD13.000</h6>
+                    </th>
+                  </tr>
+
+
+                  <tr class="table-active">
+                    <th scope="row">
+                      Pineapple 2KG
+                      <h6>
+                        SKU: LT-3000
+                      </h6>
+                    </th>
+                    <th scope="col">2</th>
+                    <th scope="col">
+                      <h6> KWD11.000</h6>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+
+
+                  <tr class="table-active">
+                    <td scope="row"> </td>
+                    <td scope="col">Shipping & Handling</td>
+                    <td scope="col">KWD0.250</td>
+                  </tr>
+
+                  <tr class=" table-active">
+                    <td scope="row"> </td>
+                    <td scope="col">Tax</td>
+                    <td scope="col">KWD0.250</td>
+                  </tr>
+
+                  <tr class=" table-active">
+                    <td scope="row"> </td>
+                    <td scope="col">Discount</td>
+                    <td scope="col">KWD0.500</td>
+                  </tr>
+
+                  <tr class=" table-active">
+                    <td scope="row"> </td>
+                    <td scope="col">Subtotal </td>
+                    <td scope="col">KWD24.000</td>
+                  </tr>
+
+                  <tr class=" table-active">
+                    <td scope="row"> </td>
+                    <th scope="col">Grand Total</th>
+                    <td scope="col">KWD48.000</td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+
+              <div class="row tablefooter">
+                <div class="footertable col-6">
+                  <h6>
+                    Payment Method
+                  </h6>
+                  Cash On Delivery
+                </div>
+                <div class="footertable col-6">
+                  <h6>
+                    Shipping Method
+                  </h6>
+                  Supplier Delivery
+                </div>
+                <div class="footertable col-12">
+                  <h6>Shipping Info, </h6>
+                  <p>
+                    sabeeha Basheer, Mysupply, Block 7, Street 72, Fahaheel, 640001,Kuwait</br>
+                    Mobile No: <a href="#">94089218</a>
+                  </p>
+                </div>
+                <h4>
+                  Thank you for your order
+                </h4>
+
+                <h4>
+                  Humhumm, Block 7 Building 19 Street 67, Fahaheel Kuwait, Fahaheel, Kuwait
+                </h4>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Vendor Js File -->
+  <script src="assets/js/vendor/popper.min.js"></script>
+  <script src="assets/js/vendor/all.min.js"></script>
+  <script src="assets/js/vendor/jquery.slim.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/vendor/owl.carousel.min.js"></script>
+</body>
+
+</html>

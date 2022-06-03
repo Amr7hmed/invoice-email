@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invoice Email</title>
+  <link rel="icon" href="assets/image/logo/logo.png" />
+  <link rel="stylesheet" href="assets/css/vendor/normalize.css" />
+  <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/vendor/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/css/vendor/all.min.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #fffefe;
+  direction: ltr;
+  font-family: "Tiro Devanagari Sanskrit", serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+}
+
+.row {
+  margin: 0px;
+  padding: 0px;
+}
+.row > div {
+  margin: 0px;
+  padding: 0px;
+}
+
+.pageone {
+  padding: 15px 0px;
+}
+.pageone h2 {
+  text-align: center;
+  margin: 25px auto;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.pageone__table .cart,
+.pageone__table .doc {
+  border: 0.5px solid #000;
+  padding: 10px;
+}
+.pageone__table .cart h5,
+.pageone__table .doc h5 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.pageone__table .cart p,
+.pageone__table .doc p {
+  font-size: 16px;
+}
+.pageone__table .cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pageone__table .cart span {
+  font-size: 50px;
+  color: #e77e7e;
+}
+.pageone__table div.table {
+  border: 0.5px solid #000;
+  text-align: left;
+}
+.pageone__table div.table table.table {
+  width: 90%;
+  border: 3px solid #dee2e6;
+}
+.pageone__table div.table table.table .table-active {
+  border-top: 3px solid #dee2e6;
+}
+.pageone__table div.table .tablefooter {
+  width: 90%;
+}
+.pageone__table div.table .footertable {
+  padding: 20px 10px;
+}
+.pageone__table div.table .footertable h6 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.pageone__table div.table .footertable p {
+  font-weight: bold;
+}
+.pageone__table div.table .footertable p a {
+  color: #4444fa;
+  text-decoration: underline;
+}
+.pageone__table div.table h4 {
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <div class="pageone">
+        <h2>INVOICE SUGGESTION</h2>
+        <div class="pageone__table">
+          <div class="row">
+            
+          <div class="cart col-6">
+            <span><i class="fa-solid fa-cart-arrow-down"></i></span>
+          </div>
+          <div class="doc col-6">
+            <h5>
+              SUPPLIER :
+            </h5>
+            <p>
+              Mohamed Abdulrahman Al-Bahar Co </br>
+              Building 32, Street 3, Block 1 </br>
+              Sector 3, Shuwaikh Industrial Area</br>
+              Shuweikh Kuwait,</br>
+              650002 - Kuwait
+            </p>
+          </div>
+          <div class="doc col-6">
+            <p>
+              Invoice # 1-000001319-1027 </br></br>
+              Order Date: Apr 26, 2021
+            </p>
+          </div>
+          <div class="doc col-6">
+            <p>
+              Order # 000001319 -1027
+            </p>
+          </div>
+
+          <div class="table col-12">
+            <table class="table">
+              <thead>
+                <tr class=" table-active">
+                  <th scope="row" >Items </th>
+                  <th scope="col">Qty</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    DATES MEDJOOL 5KG
+                    <h6>
+                      SKU: DMDD001
+                    </h6>
+                  </th>
+                  <td>1</td>
+                  <td>
+                    KWD13.000
+                  </td>
+                </tr>
+                
+                <tr>
+                  <th scope="row">
+                    Del Monte Honey Pineapple 
+                    <h6>
+                      SKU: DM-3000
+                    </h6>
+                  </th>
+                  <td>2</td>
+                  <td>
+                    KWD11.000
+                  </td>
+                </tr>
+
+                <tr class="table-active">
+                  <td scope="row" > </td>
+                  <td scope="col">Subtotal</td>
+                  <td scope="col">KWD24.000</td>
+                </tr>
+
+                <tr class="table-active">
+                  <td scope="row" > </td>
+                  <td scope="col">Shipping & Handling</td>
+                  <td scope="col">KWD0.250</td>
+                </tr>
+
+                <tr class=" table-active">
+                  <td scope="row" > </td>
+                  <td scope="col">Tax</td>
+                  <td scope="col">KWD0.250</td>
+                </tr>
+
+                <tr class=" table-active">
+                  <td scope="row" > </td>
+                  <td scope="col">Discount</td>
+                  <td scope="col">KWD0.500</td>
+                </tr>
+
+                <tr class=" table-active">
+                  <td scope="row" > </td>
+                  <th scope="col">Grand Total</th>
+                  <td scope="col">KWD24.000</td>
+                </tr>
+
+
+              </tbody>
+            </table>
+
+
+            <div class="row tablefooter">
+              <div class="footertable col-6">
+                <h6>
+                  Payment Method 
+                </h6>
+                Cash On Delivery
+              </div>
+              <div class="footertable col-6">
+                <h6>
+                  Shipping Method 
+                </h6>
+                Supplier Delivery
+              </div>
+              <div class="footertable col-12">
+                <h6>Shipping Info, </h6>
+                <p>
+                  sabeeha Basheer, Mysupply, Block 7, Street 72, Fahaheel, 640001,Kuwait</br>
+                 Mobile No: <a href="#">94089218</a>
+                </p>
+              </div>
+              <h4>
+                Thank you for your order
+              </h4>
+
+              <h4>
+                Humhumm, Block 7 Building 19 Street 67, Fahaheel Kuwait, Fahaheel, Kuwait
+              </h4>
+
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Vendor Js File -->
+  <script src="assets/js/vendor/popper.min.js"></script>
+  <script src="assets/js/vendor/all.min.js"></script>
+  <script src="assets/js/vendor/jquery.slim.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+  <!-- Script Genral Js File -->
+</body>
+
+</html>

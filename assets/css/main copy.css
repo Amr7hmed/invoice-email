@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #fffefe;
+  direction: ltr;
+  font-family: "Tiro Devanagari Sanskrit", serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+}
+
+.row {
+  margin: 0px;
+  padding: 0px;
+}
+.row > div {
+  margin: 0px;
+  padding: 0px;
+}
+
+.pageone {
+  padding: 15px 0px;
+}
+.pageone h2 {
+  text-align: center;
+  margin: 25px auto;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.pageone__table .cart,
+.pageone__table .doc {
+  border: 0.5px solid #000;
+  padding: 10px;
+}
+.pageone__table .cart h5,
+.pageone__table .doc h5 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.pageone__table .cart p,
+.pageone__table .doc p {
+  font-size: 16px;
+}
+.pageone__table .cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pageone__table .cart span {
+  font-size: 50px;
+  color: #e77e7e;
+}
+.pageone__table div.table {
+  border: 0.5px solid #000;
+  text-align: left;
+}
+.pageone__table div.table table.table {
+  width: 90%;
+  border: 3px solid #dee2e6;
+}
+.pageone__table div.table table.table .table-active {
+  border-top: 3px solid #dee2e6;
+}
+.pageone__table div.table .tablefooter {
+  width: 90%;
+}
+.pageone__table div.table .footertable {
+  padding: 20px 10px;
+}
+.pageone__table div.table .footertable h6 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.pageone__table div.table .footertable p {
+  font-weight: bold;
+}
+.pageone__table div.table .footertable p a {
+  color: #4444fa;
+  text-decoration: underline;
+}
+.pageone__table div.table h4 {
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+/*# sourceMappingURL=main%20copy.css.map */

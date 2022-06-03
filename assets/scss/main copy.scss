@@ -32,8 +32,7 @@ ul {
 }
 
 // 1- page one style
-
-.pagethree {
+.pageone {
   padding: 15px 0px;
   h2 {
     text-align: center;
@@ -45,8 +44,8 @@ ul {
   &__table {
     .cart,
     .doc {
-      border: 0.5px solid rgb(121, 121, 121);
-      padding: 10px 20px;
+      border: 0.5px solid #000;
+      padding: 10px;
       h5 {
         font-size: 18px;
         font-weight: bold;
@@ -54,9 +53,6 @@ ul {
       }
       p {
         font-size: 16px;
-      }
-      h4{
-        font-weight: bold;
       }
     }
 
@@ -71,32 +67,17 @@ ul {
       }
     }
     div.table {
-      border: 0.5px solid rgb(121, 121, 121);
+      border: 0.5px solid #000;
       text-align: left;
       table.table {
         width: 90%;
-        border: 2px solid #cecece;
-        margin: 0px auto;
-        thead{
+        border: 3px solid #dee2e6;
         .table-active {
-          border-top: 2px solid #cecece;
-          th{
-            width: 25%;
-            border-bottom: 2px solid #c0c0c0;
-            &:first-of-type{
-              width: 50%;
-              border-right: 2px solid #c0c0c0;
-            }
-          }
-          
-          
-        } 
-      }
+          border-top: 3px solid #dee2e6;
+        }
       }
       .tablefooter {
         width: 90%;
-        margin: 0px auto;
-        border: 2px solid #cecece;
       }
       .footertable {
         padding: 20px 10px;
@@ -106,6 +87,10 @@ ul {
         }
         p {
           font-weight: bold;
+          a {
+            color: rgb(68, 68, 250);
+            text-decoration: underline;
+          }
         }
       }
       h4{
@@ -114,33 +99,7 @@ ul {
         width: 100%;
         text-align: center;
         margin: 30px 0px;
-        margin-bottom: 0px;
-        padding: 15px 0px;
-        background-color: #ddd;
       }
-    }
-
-    .medie{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      a{
-        width: 30px;
-        height: 20px;
-        display: inline-block;
-        cursor: pointer;
-        img{
-          display: inline-block;
-          width: 30px;
-          height: 20px;
-          margin-right: 5px;
-          cursor: pointer;
-        }
-      }
-    }
-    a {
-      color: rgb(68, 68, 250);
-      text-decoration: underline;
     }
   }
 }

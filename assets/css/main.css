@@ -1,24 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* 
-    //====== Style English ======//
-    A- Variables Styles .
-    B- Style Genaral Classes .
-    E- Import Style Components .
-      E-1- Import Style Navbar Component .
-      E-2- Import Style About Us Page .
-      E-3- Import Style Home Page .
-      E-4- Import Style Footer Component .
-      E-5- Import Style Projects Component .
-      E-6- Import Style Project Component .
- */
-:root {
-  --white-color: #ffffff;
-  --yello-color: #f7942d;
-  --black-color: #000000;
-  --poppins-font: "Poppins", sans-serif;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -27,18 +7,9 @@
 
 body {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
   background-color: #fffefe;
   direction: ltr;
-}
-
-.owl-stage-outer {
-  direction: ltr !important;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+  font-family: "Tiro Devanagari Sanskrit", serif;
 }
 
 ul {
@@ -49,150 +20,120 @@ ul li {
   list-style-type: none;
 }
 
-button:hover {
-  background-color: inherit;
-  color: inherit;
+.row {
+  margin: 0px;
+  padding: 0px;
+}
+.row > div {
+  margin: 0px;
+  padding: 0px;
 }
 
-button:focus {
-  background-color: inherit;
-  color: inherit;
+.pagethree {
+  padding: 15px 0px;
 }
-
-.nav_contener {
-  padding: 10px 0px;
-  background-color: #e2dede;
-  border-bottom: 1px solid #7c7c7c;
+.pagethree h2 {
+  text-align: center;
+  margin: 25px auto;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-
-nav.navbar .navbar-brand {
+.pagethree__table .cart,
+.pagethree__table .doc {
+  border: 0.5px solid #797979;
+  padding: 10px 20px;
+}
+.pagethree__table .cart h5,
+.pagethree__table .doc h5 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.pagethree__table .cart p,
+.pagethree__table .doc p {
+  font-size: 16px;
+}
+.pagethree__table .cart h4,
+.pagethree__table .doc h4 {
+  font-weight: bold;
+}
+.pagethree__table .cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pagethree__table .cart span {
+  font-size: 50px;
+  color: #e77e7e;
+}
+.pagethree__table div.table {
+  border: 0.5px solid #797979;
+  text-align: left;
+}
+.pagethree__table div.table table.table {
+  width: 90%;
+  border: 2px solid #cecece;
   margin: 0px auto;
 }
-nav.navbar .navbar-brand img {
-  width: 200px;
-  height: 50px;
+.pagethree__table div.table table.table thead .table-active {
+  border-top: 2px solid #cecece;
 }
-
-.slide-item {
-  width: 100%;
-  height: 600px;
-  position: relative;
+.pagethree__table div.table table.table thead .table-active th {
+  width: 25%;
+  border-bottom: 2px solid #c0c0c0;
 }
-.slide-item img {
-  width: 100%;
-  height: 600px;
+.pagethree__table div.table table.table thead .table-active th:first-of-type {
+  width: 50%;
+  border-right: 2px solid #c0c0c0;
 }
-.slide-item .slide-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: var(--poppins-font);
-  font-size: 38px;
+.pagethree__table div.table .tablefooter {
+  width: 90%;
+  margin: 0px auto;
+  border: 2px solid #cecece;
+}
+.pagethree__table div.table .footertable {
+  padding: 20px 10px;
+}
+.pagethree__table div.table .footertable h6 {
+  font-size: 18px;
   font-weight: bold;
 }
-.slide-item .slide-content span {
-  color: #d88929;
-}
-
-.aboutus,
-.vision,
-.mission {
-  padding: 60px 0px;
-  background-color: #2b2b2b;
-  font-family: var(--poppins-font);
-  border-top: 2px solid #575757;
-}
-.aboutus h4,
-.vision h4,
-.mission h4 {
-  font-size: 38px;
+.pagethree__table div.table .footertable p {
   font-weight: bold;
-  color: #d88929;
-  margin-bottom: 30px;
 }
-.aboutus h5,
-.vision h5,
-.mission h5 {
-  font-size: 34px;
-  font-weight: bold;
-  color: #d88929;
-  margin-bottom: 30px;
-}
-.aboutus p,
-.vision p,
-.mission p {
-  font-size: 22px;
-  color: white;
-  margin-top: 25px;
-  text-transform: capitalize;
-}
-.aboutus img,
-.vision img,
-.mission img {
-  width: 100%;
-  height: 350px;
-}
-
-.active {
-  background-color: #d88929;
-  padding: 60px 0px;
-  border-top: 2px solid #575757;
-  border-bottom: 2px solid #575757;
-}
-.active .img {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-.active .img img {
-  width: 180px;
-  height: 100px;
-}
-
-.portfolio {
-  padding: 60px 0px;
-  background-color: #2b2b2b;
-  font-family: var(--poppins-font);
-  border-top: 2px solid #575757;
-}
-.portfolio .line {
-  display: block;
-  height: 1px;
-  background-color: #505050;
-  margin: 70px auto;
-}
-.portfolio h5 {
-  font-size: 34px;
-  font-weight: bold;
-  color: #d88929;
-  margin-bottom: 50px;
-  text-align: center;
-}
-.portfolio h6 {
-  font-size: 22px;
-  font-weight: bold;
-  color: #d88929;
-}
-.portfolio p {
+.pagethree__table div.table h4 {
   font-size: 16px;
-  color: white;
-  margin-top: 5px;
-  text-transform: capitalize;
-}
-.portfolio img {
+  font-weight: bold;
   width: 100%;
-  height: 250px;
+  text-align: center;
+  margin: 30px 0px;
+  margin-bottom: 0px;
+  padding: 15px 0px;
+  background-color: #ddd;
 }
-
-footer {
-  background-color: #d88929;
-  padding: 30px 0px;
+.pagethree__table .medie {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-footer img {
-  width: 75px;
-  height: 50px;
+.pagethree__table .medie a {
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+.pagethree__table .medie a img {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.pagethree__table a {
+  color: #4444fa;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */
