@@ -7,10 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Invoice Email</title>
   <link rel="icon" href="assets/image/logo/logo.png" />
-  <link rel="stylesheet" href="assets/css/vendor/normalize.css" />
-  <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/vendor/fontawesome.min.css" />
-  <link rel="stylesheet" href="assets/css/vendor/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap");
 * {
@@ -75,8 +72,13 @@ ul li {
   align-items: center;
 }
 .pageone__table .cart span {
-  font-size: 50px;
-  color: #e77e7e;
+  width: 50px;
+  height: 50px;
+  filter: invert(79%) sepia(29%) saturate(3313%) hue-rotate(304deg) brightness(92%) contrast(85%);
+}
+.pageone__table .cart span img{
+  width: 100%;
+  height: 100%;
 }
 .pageone__table div.table {
   border: 0.5px solid #000;
@@ -128,7 +130,9 @@ ul li {
           <div class="row">
             
           <div class="cart col-6">
-            <span><i class="fa-solid fa-cart-arrow-down"></i></span>
+            <span>
+              <img src="/assets/image/icons/cart-arrow-down-solid.svg" alt="">
+            </span>
           </div>
           <div class="doc col-6">
             <h5>
@@ -262,11 +266,8 @@ ul li {
   </main>
 
   <!-- Vendor Js File -->
-  <script src="assets/js/vendor/popper.min.js"></script>
-  <script src="assets/js/vendor/all.min.js"></script>
-  <script src="assets/js/vendor/jquery.slim.min.js"></script>
-  <script src="assets/js/vendor/bootstrap.min.js"></script>
-  <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Script Genral Js File -->
 </body>
 
